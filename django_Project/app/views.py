@@ -42,7 +42,7 @@ from django.urls import reverse
 #     return HttpResponseRedirect(reverse("app:results",args=(question_id,)))
 
 class IndexView(generic.ListView):
-    template_name = "polls/index.html"
+    template_name = "app/index.html"
     context_object_name = "latest_question_list"
 
     def get_queryset(self):
